@@ -52,9 +52,10 @@ function draw() {
   boy.collide(edges);
   
   //code to reset the background
-  if (path.x < 0) {
-    path.x = path.width/2
-  }
+  if (path.y > height)
+    {
+      path.y = height/2;
+    }
 
     createCash();
     createDiamonds();
